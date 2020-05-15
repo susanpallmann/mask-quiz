@@ -56,6 +56,7 @@ header h3:hover, header h4:hover {
 }
 footer {
   background-color: #132746;
+  display: table-row;
 }
 .coral {
   background-color: #ED6A5A;
@@ -141,6 +142,10 @@ a .button {
 .button.begin[ready="false"] {
   background-color: #132746;
   color: #18314F;
+}
+main {
+  display: table-row;
+  height: 100%;
 }
 /* Media queries */
 @media only screen and (max-width: 320px) {
