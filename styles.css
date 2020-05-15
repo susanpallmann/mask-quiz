@@ -4,6 +4,9 @@ body {
   color: #ffffff;
   background-color: #18314F;
   margin: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
 }
 h1, h2, h3 {
   color: #ED6A5A;
