@@ -22,6 +22,15 @@ footer {
   background-color: #ED6A5A;
   color: #18314F;
 }
+.tile {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #DC5F51;
+  border-radius: 0.6em;
+}
+.tile:nth-child(2) {
+  background-color: #ED6A5A;
+}
 .coral h1, h2, h3, h4 {
   color: #ffffff;
 }
