@@ -138,7 +138,7 @@ a .button {
   background-color: #18314F;
   color: #132746;
 }
-.button#begin[ready="false"] {
+.button.begin[ready="false"] {
   background-color: #132746;
   color: #18314F;
 }
