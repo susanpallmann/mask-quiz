@@ -25,8 +25,8 @@ footer {
 .column.tile {
   padding-top: 1em !important;
   padding-bottom: 1em !important;
-  padding-left: 0.5em !important;
-  padding-right: 0.5em !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
   background-color: #DC5F51;
   border-radius: 0.6em;
 }
