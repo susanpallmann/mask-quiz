@@ -2,11 +2,16 @@
 body {
   font-family: 'raleway', sans-serif;
   color: #ffffff;
+  background-color: #18314F;
   margin: 0;
+}
+h1, h2, h3 {
+  color: #ED6A5A;
 }
 /* CTA button handling */
 .button {
-  background-color: #EF4DAE;
+  background-color: #ED6A5A;
+  color: #ffffff;
   border-radius: 500px;
   padding: 0.4em 1em;
   cursor: pointer;
@@ -14,10 +19,8 @@ body {
   -webkit-transition: background-color 0.1s ease-in-out;
 }
 .button:hover {
-  background-color: #3B2611;
-}
-a .button:hover {
-  text-shadow: 0px 1px 0.5px #fe58bc;
+  background-color: #FCD2BE;
+  color: #18314F;
 }
 a .button {
   color: #ffffff;
