@@ -48,6 +48,9 @@ $(document).ready(function() {
         $('#results').slideToggle();
         $('#q1').slideToggle();
     });
+    $('#begin').click(function() {
+        beginQuiz();
+    }
 });
 function nextQ() {
     $('#next').attr('ready','true');
