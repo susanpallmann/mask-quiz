@@ -153,6 +153,9 @@ main {
   display: table-row;
   height: 100%;
 }
+footer a:hover {
+  color: #ED6A5A;
+}
 /* Media queries */
 @media only screen and (max-width: 320px) {
 }
