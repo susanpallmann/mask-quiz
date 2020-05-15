@@ -98,6 +98,12 @@ footer {
   color: #ffffff;
   font-weight: 600;
 }
+.answer a {
+  color: #ED6A5A;
+}
+.answer a:hover {
+  color: #ffffff;
+}
 .copyright {
   text-align: center;
   padding: 0.5em;
@@ -151,6 +157,9 @@ a .button {
 .button.begin[ready="false"] {
   background-color: #132746;
   color: #18314F;
+}
+.begin {
+  cursor: pointer;
 }
 main {
   display: table-row;
