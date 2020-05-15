@@ -33,7 +33,7 @@ header {
   background-color: #ffffff;
 }
 .check:hover {
-  color: #ffffff;
+  border: 3px solid #ffffff;
 }
 label {
   margin-top: 0.25em;
