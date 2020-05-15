@@ -10,6 +10,7 @@ body {
   height: 100%;
   width: 100%;
   display: table;
+  line-height: 1.5em;
 }
 h1, h2, h3 {
   color: #ED6A5A;
