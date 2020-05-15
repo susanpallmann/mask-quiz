@@ -1,4 +1,7 @@
 /* Text styles */
+html {
+  height: 100%;
+}
 body {
   font-family: 'raleway', sans-serif;
   color: #ffffff;
