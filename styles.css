@@ -25,6 +25,9 @@ nav ul {
   margin: 0;
   text-align: right;
 }
+nav ul li {
+  display: inline-block;
+}
 footer {
   background-color: #132746;
 }
