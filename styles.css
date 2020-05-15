@@ -19,6 +19,9 @@ header {
   background-color: #132746;
   color: #18314F;
 }
+#quiz {
+  background-color: #132746;
+}
 .check {
   height: 20px;
   width: 20px;
