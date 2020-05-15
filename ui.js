@@ -42,16 +42,43 @@ $(document).ready(function() {
         } else {
         }
     });
+    // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
+    $('#next').keydown(function (e) {
+        var code = e.which;
+        // 13 = Return, 32 = Space
+        if ((code === 13) || (code === 32)) {
+            // Activates original click event
+            $(this).click();
+        }
+    });
     $('#restart').click(function() {
         $('#next').text('Next').attr('q','1').attr('ready','false').slideToggle();
         $('.check').attr('aria-checked','false');
         $('#results').slideToggle();
         $('#q1').slideToggle();
     });
+    // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
+    $('#restart').keydown(function (e) {
+        var code = e.which;
+        // 13 = Return, 32 = Space
+        if ((code === 13) || (code === 32)) {
+            // Activates original click event
+            $(this).click();
+        }
+    });
     $('.begin').click(function() {
         if ( $(this).attr('ready') === 'false' ) {
         } else {
           beginQuiz();
+        }
+    });
+    // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
+    $('.begin').keydown(function (e) {
+        var code = e.which;
+        // 13 = Return, 32 = Space
+        if ((code === 13) || (code === 32)) {
+            // Activates original click event
+            $(this).click();
         }
     });
     $('#close').click(function() {
@@ -60,6 +87,15 @@ $(document).ready(function() {
         $('#results').slideToggle();
         $('#q1').slideToggle();
         closeQuiz();
+    });
+    // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
+    $('#close').keydown(function (e) {
+        var code = e.which;
+        // 13 = Return, 32 = Space
+        if ((code === 13) || (code === 32)) {
+            // Activates original click event
+            $(this).click();
+        }
     });
 });
 function nextQ() {
