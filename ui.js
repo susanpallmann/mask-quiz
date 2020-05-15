@@ -30,6 +30,7 @@ $(document).ready(function() {
             var nextQ = currentQ + 1;
             $('#q' + currentQ).slideToggle();
             $('#q' + nextQ).slideToggle();
+            $(this).attr('ready','false');
         } else {
         }
     });
