@@ -50,6 +50,9 @@ footer {
 .column.tile:nth-child(3) {
   background-color: #ED6A5A;
 }
+.column.tile:hover {
+  background-color: #FB7868;
+}
 .coral h1, h2, h3, h4 {
   color: #ffffff;
 }
