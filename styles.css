@@ -176,12 +176,32 @@ footer a:hover {
 }
 /* Media queries */
 @media only screen and (max-width: 320px) {
+  header .column.span6 {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 321px) {
+  header .column.span6 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 500px) {
+  header .column.span6 {
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 601px) {
+  header .column.span6 {
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 721px) {
+  header .column.span6 {
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 850px) {
+  header .column.span6 {
+    width: 50%;
+  }
 }
