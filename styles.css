@@ -167,8 +167,12 @@ main {
   display: table-row;
   height: 100%;
 }
+footer a {
+  text-decoration: underline;
+}
 footer a:hover {
   color: #ED6A5A;
+  text-decoration: none;
 }
 /* Media queries */
 @media only screen and (max-width: 320px) {
