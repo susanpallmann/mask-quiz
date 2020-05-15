@@ -27,6 +27,10 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
+  margin-left: 2em;
+}
+nav ul li:hover {
+  color: #ED6A5A;
 }
 footer {
   background-color: #132746;
