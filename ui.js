@@ -51,6 +51,13 @@ $(document).ready(function() {
     $('#begin').click(function() {
         beginQuiz();
     });
+    $('#close').click(function() {
+        $('#next').text('Next').attr('q','1').attr('ready','false').slideToggle();
+        $('.check').attr('aria-checked','false');
+        $('#results').slideToggle();
+        $('#q1').slideToggle();
+        closeQuiz();
+    });
 });
 function nextQ() {
     $('#next').attr('ready','true');
@@ -61,5 +68,9 @@ function showResults() {
 }
 function beginQuiz() {
     $('#begin').attr('ready','false');
+    $('#quiz').slideToggle();
+}
+function closeQuiz() {
+    $('#begin').attr('ready','true');
     $('#quiz').slideToggle();
 }
