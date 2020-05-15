@@ -56,3 +56,7 @@ function showResults() {
     $('#next').slideToggle();
     $('#results').slideToggle();
 }
+function beginQuiz() {
+    $('#begin').attr('ready','false');
+    $('#quiz').slideToggle();
+}
