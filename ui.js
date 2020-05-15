@@ -27,14 +27,26 @@ $(document).ready(function() {
     $('#next').click(function() {
         if ( $(this).attr('ready') === 'true' ) {
             var currentQ = parseInt($(this).attr("q"));
-            var nextQ = currentQ + 1;
-            $('#q' + currentQ).slideToggle();
-            $('#q' + nextQ).slideToggle();
-            $(this).attr('ready','false').attr('q',nextQ);
+            if ( currentQ < 5 ) {
+                var nextQ = currentQ + 1;
+                $('#q' + currentQ).slideToggle();
+                $('#q' + nextQ).slideToggle();
+                $(this).attr('ready','false').attr('q',nextQ);
+                if ( nextQ === 5 ) {
+                    $('#next').text('See results');
+                }
+            } else {
+                $('#q' + currentQ).slideToggle();
+                showResults();
+            }
         } else {
         }
     });
 });
 function nextQ() {
     $('#next').attr('ready','true');
+}
+function showResults() {
+    $('#next').slideToggle();
+    $('#results').slideToggle();
 }
