@@ -100,6 +100,14 @@ a .button {
   text-decoration: none;
   font-weight: 700;
 }
+.coral .button {
+  background-color: #18314F;
+  color: #ffffff;
+}
+.coral .button:hover {
+  background-color: #132746;
+  color: #ED6A5A;
+}
 /* Media queries */
 @media only screen and (max-width: 320px) {
 }
