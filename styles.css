@@ -19,7 +19,15 @@ footer {
   color: #ffffff;
 }
 .coral h1, h2, h3 {
+  color: #ffffff;
+}
+.question {
   color: #18314F;
+  font-style: italic;
+}
+.answer {
+  color: #ffffff;
+  font-weight: 500;
 }
 /* CTA button handling */
 .button {
