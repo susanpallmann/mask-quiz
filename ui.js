@@ -45,6 +45,8 @@ $(document).ready(function() {
     $('#restart').click(function() {
         $('#next').text('Next').attr('q','1').attr('ready','false');
         $('.check').attr('aria-checked','false');
+        $('#results').slideToggle();
+        $('#q1').slideToggle();
     });
 });
 function nextQ() {
