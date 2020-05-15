@@ -4,15 +4,15 @@ $(document).ready(function() {
     $(".check").click(function() {
         // If the box is checked
         if ($(this).attr("aria-checked") === "true" ) {
-            // Calls function to update Bigfoot's happy meter (decrease it)
-            //updateBigfoot(-1);
+            // Calls function to activate the next button
+            nextQ();
         // If the box isn't checked
         } else {
             // Check it
             $(this).parent().find('.check').attr("aria-checked", "false");
             $(this).attr("aria-checked", "true");
-            // Calls function to update Bigfoot's happy meter (increase it)
-            //updateBigfoot(1);
+            // Calls function to activate the next button
+            nextQ();
         }
     });
     // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
@@ -24,4 +24,16 @@ $(document).ready(function() {
             $(this).click();
         }
     });
+    $('#next').click(function() {
+        if ( $(this).attr('ready') === 'true' ) {
+            var currentQ = parseInt($(this).attr("q"));
+            var nextQ = currentQ + 1;
+            $('#q' + currentQ).slideToggle();
+            $('#q' + nextQ).slideToggle();
+        } else {
+        }
+    });
 });
+function nextQ() {
+    $('#next').attr('ready','true');
+}
