@@ -49,7 +49,9 @@ $(document).ready(function() {
         $('#q1').slideToggle();
     });
     $('#begin').click(function() {
-        beginQuiz();
+        if ( $(this).attr('ready') === 'true' ) {
+          beginQuiz();
+        }
     });
     $('#close').click(function() {
         $('#next').text('Next').attr('q','1').attr('ready','false').slideToggle();
