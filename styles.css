@@ -99,10 +99,12 @@ footer {
   font-weight: 600;
 }
 .answer a {
-  color: #ED6A5A;
+  color: #ffffff;
+  text-decoration: underline;
 }
 .answer a:hover {
-  color: #ffffff;
+  color: #ED6A5A;
+  text-decoration: none;
 }
 .copyright {
   text-align: center;
