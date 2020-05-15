@@ -28,6 +28,7 @@ $(document).ready(function() {
         if ( $(this).attr('ready') === 'true' ) {
             var currentQ = parseInt($(this).attr("q"));
             var nextQ = currentQ + 1;
+            console.log(currentQ + " " + nextQ);
             $('#q' + currentQ).slideToggle();
             $('#q' + nextQ).slideToggle();
         } else {
