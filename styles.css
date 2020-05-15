@@ -32,6 +32,12 @@ header {
 .check:hover {
   color: #ffffff;
 }
+label {
+  margin-top: 0.25em;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0.4em;
+}
 nav ul {
   list-style: none;
   padding: 0;
