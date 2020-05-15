@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
     $('#begin').click(function() {
         beginQuiz();
-    }
+    });
 });
 function nextQ() {
     $('#next').attr('ready','true');
