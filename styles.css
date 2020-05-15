@@ -106,7 +106,7 @@ a .button {
 }
 .coral .button:hover {
   background-color: #132746;
-  color: #ED6A5A;
+  color: #FCD2BE;
 }
 /* Media queries */
 @media only screen and (max-width: 320px) {
