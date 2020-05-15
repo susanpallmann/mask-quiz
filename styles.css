@@ -10,6 +10,7 @@ h1, h2, h3 {
 }
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 footer {
   background-color: #132746;
@@ -28,6 +29,10 @@ footer {
 .answer {
   color: #ffffff;
   font-weight: 600;
+}
+.copyright {
+  text-align: center;
+  padding: 0.2em;
 }
 /* CTA button handling */
 .button {
