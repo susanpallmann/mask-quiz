@@ -42,6 +42,10 @@ $(document).ready(function() {
         } else {
         }
     });
+    $('#restart').click(function() {
+        $('#next').text('Next').attr('q','1').attr('ready','false');
+        $('.check').attr('aria-checked','false');
+    });
 });
 function nextQ() {
     $('#next').attr('ready','true');
