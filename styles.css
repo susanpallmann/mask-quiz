@@ -23,10 +23,10 @@ footer {
   color: #18314F;
 }
 .column.tile {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
   background-color: #DC5F51;
   border-radius: 0.6em;
 }
