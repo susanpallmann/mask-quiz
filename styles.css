@@ -11,6 +11,9 @@ h1, h2, h3 {
 a {
   text-decoration: none;
 }
+footer {
+  background-color: #132746;
+}
 /* CTA button handling */
 .button {
   background-color: #ED6A5A;
