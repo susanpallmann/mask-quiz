@@ -132,6 +132,10 @@ a .button {
   background-color: #132746;
   color: #FCD2BE;
 }
+.button[ready="false"] {
+  background-color: #132746;
+  color: #18314F;
+}
 /* Media queries */
 @media only screen and (max-width: 320px) {
 }
