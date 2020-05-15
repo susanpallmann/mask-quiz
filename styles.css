@@ -30,7 +30,7 @@ header {
   border: 3px solid #ED6A5A;
 }
 .check[aria-checked="true"] {
-  background-color: #ffffff;
+  background-color: #ED6A5A;
 }
 .check:hover {
   border: 3px solid #ffffff;
