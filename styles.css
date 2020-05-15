@@ -14,6 +14,13 @@ a {
 footer {
   background-color: #132746;
 }
+.coral {
+  background-color: #ED6A5A;
+  color: #ffffff;
+}
+.coral h1, h2, h3 {
+  color: #18314F;
+}
 /* CTA button handling */
 .button {
   background-color: #ED6A5A;
