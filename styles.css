@@ -180,6 +180,9 @@ footer a:hover {
     margin-left: 1em;
     margin-right: 1em
   }
+  header h3 {
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 321px) {
   header .column.span6.sm:nth-child(n) {
@@ -196,6 +199,9 @@ footer a:hover {
     margin-left: 1em;
     margin-right: 1em
   }
+  header h3 {
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 500px) {
   header .column.span6.sm:nth-child(n) {
@@ -210,6 +216,9 @@ footer a:hover {
   nav ul li {
     display: inline-block;
     margin-left: 2em;
+  }
+  header h3 {
+    text-align: left;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -226,6 +235,9 @@ footer a:hover {
     display: inline-block;
     margin-left: 2em;
   }
+  header h3 {
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 721px) {
   header .column.span6.sm:nth-child(n) {
@@ -241,6 +253,9 @@ footer a:hover {
     display: inline-block;
     margin-left: 2em;
   }
+  header h3 {
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 850px) {
   header .column.span6.sm:nth-child(n) {
@@ -255,5 +270,8 @@ footer a:hover {
   nav ul li {
     display: inline-block;
     margin-left: 2em;
+  }
+  header h3 {
+    text-align: left;
   }
 }
