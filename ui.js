@@ -1,5 +1,6 @@
 // On document ready
 $(document).ready(function() {
+    windowStartQuiz();
     // Functionality for the artificial checkboxes, works on click
     $(".check").click(function() {
         // If the box is checked
@@ -112,4 +113,30 @@ function beginQuiz() {
 function closeQuiz() {
     $('.begin').attr('ready','true');
     $('#quiz').slideToggle();
+}
+function getParameterByName(name, url) {
+    // Gets current URL
+    if (!url) url = window.location.href;
+    // Some regular expression manipulation to get to the parameter we're looking for
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    // Failsafes
+    if (!results) return null;
+    if (!results[2]) return '';
+    // Returns the parameter information
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+/* Starts quiz */
+function windowStartQuiz() {
+    // Retrieves quiz parameter
+    var quiz = getParameterByName('start');
+    // If there isn't a quiz instruction
+    if (!quiz) {
+        // Do nothing
+        return null;
+    // If there is a quiz instruction
+    } else {
+        $('.begin').click()
+    }
 }
