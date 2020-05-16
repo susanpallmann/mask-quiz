@@ -204,25 +204,26 @@ footer a:hover {
     text-align: center;
   }
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 601px) {
   header .column.span6.sm:nth-child(n) {
-    width: 50%;
+    width: 100%;
   }
   nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
   }
   nav ul li {
     display: inline-block;
-    margin-left: 2em;
+    margin-left: 1em;
+    margin-right: 1em
   }
   header h3 {
-    text-align: left;
+    text-align: center;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 610px) {
   header .column.span6.sm:nth-child(n) {
     width: 50%;
   }
