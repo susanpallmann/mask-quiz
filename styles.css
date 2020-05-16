@@ -38,7 +38,6 @@ header {
   display: inline-block;
   border-radius: 500px;
   border: 3px solid #ED6A5A;
-  tabindex: 0;
 }
 .check[aria-checked="true"] {
   background-color: #ED6A5A;
@@ -125,7 +124,6 @@ footer {
   display: inline-block;
   font-weight: 700;
   margin-right: 1em;
-  tabindex: 0;
 }
 .button:hover {
   background-color: #FCD2BE;
@@ -155,7 +153,6 @@ a .button {
 }
 .begin {
   cursor: pointer;
-  tabindex: 0;
 }
 main {
   display: table-row;
