@@ -1,6 +1,5 @@
 // On document ready
 $(document).ready(function() {
-    windowStartQuiz();
     // Functionality for the artificial checkboxes, works on click
     $(".check").click(function() {
         // If the box is checked
@@ -98,6 +97,7 @@ $(document).ready(function() {
             $(this).click();
         }
     });
+    windowStartQuiz();
 });
 function nextQ() {
     $('#next').attr('ready','true');
@@ -137,6 +137,6 @@ function windowStartQuiz() {
         return null;
     // If there is a quiz instruction
     } else {
-        $('.begin').click()
+        $('.begin').click();
     }
 }
