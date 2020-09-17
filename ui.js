@@ -15,6 +15,7 @@ $(document).ready(function() {
             nextQ();
         }
     });
+    
     // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
     $('.check').keydown(function (e) {
         var code = e.which;
@@ -24,6 +25,7 @@ $(document).ready(function() {
             $(this).click();
         }
     });
+    
     $('#next').click(function() {
         if ( $(this).attr('ready') === 'true' ) {
             var currentQ = parseInt($(this).attr("q"));
@@ -42,6 +44,7 @@ $(document).ready(function() {
         } else {
         }
     });
+    
     // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
     $('#next').keydown(function (e) {
         var code = e.which;
@@ -51,12 +54,14 @@ $(document).ready(function() {
             $(this).click();
         }
     });
+    
     $('#restart').click(function() {
         $('#next').text('Next').attr('q','1').attr('ready','false').slideToggle();
         $('.check').attr('aria-checked','false');
         $('#results').slideToggle();
         $('#q1').slideToggle();
     });
+    
     // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
     $('#restart').keydown(function (e) {
         var code = e.which;
@@ -66,12 +71,14 @@ $(document).ready(function() {
             $(this).click();
         }
     });
+    
     $('.begin').click(function() {
         if ( $(this).attr('ready') === 'false' ) {
         } else {
           beginQuiz();
         }
     });
+    
     // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
     $('.begin').keydown(function (e) {
         var code = e.which;
@@ -81,6 +88,7 @@ $(document).ready(function() {
             $(this).click();
         }
     });
+    
     $('#close').click(function() {
         $('#next').text('Next').attr('q','1').attr('ready','false').slideToggle();
         $('.check').attr('aria-checked','false');
@@ -88,6 +96,7 @@ $(document).ready(function() {
         $('#q1').slideToggle();
         closeQuiz();
     });
+    
     // For accessibility, tracks the use of return/space key to replace a mouse click event, listens for key press
     $('#close').keydown(function (e) {
         var code = e.which;
@@ -99,21 +108,26 @@ $(document).ready(function() {
     });
     windowStartQuiz();
 });
+
 function nextQ() {
     $('#next').attr('ready','true');
 }
+
 function showResults() {
     $('#next').slideToggle();
     $('#results').slideToggle();
 }
+
 function beginQuiz() {
     $('.begin').attr('ready','false');
     $('#quiz').slideToggle();
 }
+
 function closeQuiz() {
     $('.begin').attr('ready','true');
     $('#quiz').slideToggle();
 }
+
 function getParameterByName(name, url) {
     // Gets current URL
     if (!url) url = window.location.href;
@@ -127,6 +141,7 @@ function getParameterByName(name, url) {
     // Returns the parameter information
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
 /* Starts quiz */
 function windowStartQuiz() {
     // Retrieves quiz parameter
