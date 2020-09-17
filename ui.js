@@ -134,11 +134,9 @@ function windowStartQuiz() {
     // If there isn't a quiz instruction
     if (!quiz) {
         // Do nothing
-        console.log("this ran 1");
         return null;
     // If there is a quiz instruction
     } else {
         $('.begin').click();
-        console.log("this ran 2");
     }
 }
